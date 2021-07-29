@@ -52,6 +52,21 @@ case:
     CPL_ATMIC: FV3ICS
     CCPP_SUITE: FV3_GFS_v16
     #fscav_aero: [ ] 
+### To change to C384 Resolution
+  # fv3_gfs_settings:
+  #   CASE: C384
+  #   LEVS: 65
+  #   DELTIM: 450
+  #   layout:
+  #      x: 6
+  #      y: 8
+  #      nth: 1
+  #      WGRP: 1
+  #      WGRP_NTASKS: 24
+  #      WRTIOBUF: "12M"
+  #   CPL_ATMIC: FV3ICS
+  #   CCPP_SUITE: FV3_GFS_v16
+
 
   chem_settings:
     MOD: gocart
