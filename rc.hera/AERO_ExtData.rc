@@ -19,19 +19,15 @@ DU_UTHRES               '1'  Y E - none none uthres       ExtData/Dust/FENGSHA_D
 
 #====== Sulfate Sources =================================================
 # Biomass burning -- QFED-v2.x
-SU_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass ExtData/PIESA/sfc/QFED/NRT/v2.5r1_0.1_deg/Y%y4/M%m2/qfed2.emis_so2.006.%y4%m2%d2.nc4
+SU_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none so2fire /scratch1/NCEPDEV/rstprod/nexus_emissions/GFAS/GFAS/2019/GFAS.%y4%m2.nc
 
 # Anthropogenic (BF & FF) emissions -- allowed to input as two layers
-# SU_ANTHROL1 NA  Y Y %y4-%m2-%d2t12:00:00 none none sanl1 ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.surface.x3600_y1800_t12.2010.nc4
-# SU_ANTHROL2 NA  Y Y %y4-%m2-%d2t12:00:00 none none sanl2 ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.elevated.x3600_y1800_t12.2010.nc4
-SU_ANTHROL1 NA  Y Y %y4-%m2-%d2t12:00:00 none none SO2      /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
-SU_ANTHROL2 NA  Y Y %y4-%m2-%d2t12:00:00 none none SO2_elev /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
+SU_ANTHROL1 NA  N Y %y4-%m2-%d2t12:00:00 none none SO2 /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+SU_ANTHROL2 NA  N Y %y4-%m2-%d2t12:00:00 none none SO2_elev /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 
 # Ship emissions
-# SU_SHIPSO2 NA  Y Y %y4-%m2-%d2t12:00:00 none none so2_ship ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.ships.x3600_y1800_t12.2010.nc4
-# SU_SHIPSO4 NA  Y Y %y4-%m2-%d2t12:00:00 none none so4_ship ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so4.ships.x3600_y1800_t12.2010.nc4
-SU_SHIPSO2 NA  Y Y %y4-%m2-%d2t12:00:00 none none SO2_ship /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
-SU_SHIPSO4 NA  Y Y %y4-%m2-%d2t12:00:00 none none SO4_ship /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
+SU_SHIPSO2 NA  N Y %y4-%m2-%d2t12:00:00 none none SO2_ship /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+SU_SHIPSO4 NA  N Y %y4-%m2-%d2t12:00:00 none none SO4_ship /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 
 # Aircraft fuel consumption
 SU_AIRCRAFT NA  Y Y %y4-%m2-%d2t12:00:00 none none none /dev/null
@@ -58,7 +54,7 @@ pSO2_OCS NA Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
 # ORGANIC CARBON
 # ---------------
 # Biomass burning -- QFED-v2.x
-OC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass ExtData/PIESA/sfc/QFED/NRT/v2.5r1_0.1_deg/Y%y4/M%m2/qfed2.emis_oc.006.%y4%m2%d2.nc4
+OC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none ocfire /scratch1/NCEPDEV/rstprod/nexus_emissions/GFAS/GFAS/2019/GFAS.%y4%m2.nc
 
 # Terpene emission
 OC_TERPENE NA  Y Y %y4-%m2-%d2t12:00:00 none none terpene ExtData/PIESA/sfc/geia.terpene_biogenic.x144_y91_t12.1971.nc
@@ -67,11 +63,11 @@ OC_TERPENE NA  Y Y %y4-%m2-%d2t12:00:00 none none terpene ExtData/PIESA/sfc/geia
 OC_BIOFUEL NA  Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
 
 # Anthropogenic (BF & FF) emissions -- allowed to input as two layers
-OC_ANTEOC1 NA  Y Y %y4-%m2-%d2t12:00:00 none none OC       /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
-OC_ANTEOC2 NA  Y Y %y4-%m2-%d2t12:00:00 none none OC_elev  /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
+OC_ANTEOC1 NA  N Y %y4-%m2-%d2t12:00:00 none none OC       /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+OC_ANTEOC2 NA  N Y %y4-%m2-%d2t12:00:00 none none OC_elev  /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 
 # EDGAR based ship emissions
-OC_SHIP    NA  Y Y %y4-%m2-%d2t12:00:00 none none oc_ship ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_oc.ships.x3600_y1800_t12.2010.nc4
+OC_SHIP    NA  N Y %y4-%m2-%d2t12:00:00 none none OC_ship  /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 
 # Aviation emissions during the three phases of flight
 OC_AVIATION_LTO NA  Y Y %y4-%m2-%d2t12:00:00 none none oc_aviation ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_oc.aviation_lto.x3600_y1800_t12.2010.nc4
@@ -85,17 +81,17 @@ pSOA_ANTHRO_VOC NA Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
 # BLACK CARBON
 # ------------
 # QFED v2.x
-BC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass ExtData/PIESA/sfc/QFED/NRT/v2.5r1_0.1_deg/Y%y4/M%m2/qfed2.emis_bc.006.%y4%m2%d2.nc4
+BC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none bcfire /scratch1/NCEPDEV/rstprod/nexus_emissions/GFAS/GFAS/2019/GFAS.%y4%m2.nc
 
 # Biofuel Source -- Included in AeroCom anthropogenic emissions
 BC_BIOFUEL NA  Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
 
 # Anthropogenic (BF & FF) emissions -- allowed to input as two layers
-BC_ANTEBC1 NA  Y Y %y4-%m2-%d2t12:00:00 none none BC       /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
-BC_ANTEBC2 NA  Y Y %y4-%m2-%d2t12:00:00 none none BC_elev  /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS_20190701_2019_gocart.nc
+BC_ANTEBC1 NA  N Y %y4-%m2-%d2t12:00:00 none none BC       /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+BC_ANTEBC2 NA  N Y %y4-%m2-%d2t12:00:00 none none BC_elev  /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 
 # EDGAR based ship emissions
-BC_SHIP NA  Y Y %y4-%m2-%d2t12:00:00 none none bc_ship ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_bc.ships.x3600_y1800_t12.2010.nc4
+BC_SHIP NA  N Y %y4-%m2-%d2t12:00:00 none none BC_ship  /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 
 # Aviation emissions during the LTO, SDC and CRS phases of flight
 BC_AVIATION_LTO NA  Y Y %y4-%m2-%d2t12:00:00 none none bc_aviation ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_bc.aviation_lto.x3600_y1800_t12.2010.nc4
@@ -130,12 +126,12 @@ BRC_AVIATION_CRS NA  Y Y %y4-%m2-%d2t12:00:00 none none oc_aviation /dev/null
 pSOA_BIOB_VOC NA Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
 
 # ======= Nitrate Sources ========
-EMI_NH3_BB   'kg m-2 s-1'  N      Y      %y4-%m2-%d2T12:00:00    none     none     biomass     ExtData/PIESA/sfc/QFED/NRT/v2.5r1_0.1_deg/Y%y4/M%m2/qfed2.emis_nh3.006.%y4%m2%d2.nc4
-EMI_NH3_AG   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     nh3_emis    ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_nh3.agriculture.x3600_y1800_t12.2010.nc4
-EMI_NH3_EN   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     nh3_emis    ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_nh3.energy.x3600_y1800_t12.2010.nc4
-EMI_NH3_IN   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     nh3_emis    ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_nh3.industry.x3600_y1800_t12.2010.nc4
-EMI_NH3_RE   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     nh3_emis    ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_nh3.residential.x3600_y1800_t12.2010.nc4
-EMI_NH3_TR   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     nh3_emis    ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_nh3.transport.x3600_y1800_t12.2010.nc4
+EMI_NH3_BB   NA  N Y %y4-%m2-%d2t12:00:00 none none nh3fire /scratch1/NCEPDEV/rstprod/nexus_emissions/GFAS/GFAS/2019/GFAS.%y4%m2.nc
+EMI_NH3_AG   'kg m-2 s-1'  N      Y      %y4-%m2-%d2T12:00:00    none     none     NH3_ag      /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+EMI_NH3_EN   'kg m-2 s-1'  N      Y      %y4-%m2-%d2T12:00:00    none     none     NH3_en      /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+EMI_NH3_IN   'kg m-2 s-1'  N      Y      %y4-%m2-%d2T12:00:00    none     none     NH3_in      /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+EMI_NH3_RE   'kg m-2 s-1'  N      Y      %y4-%m2-%d2T12:00:00    none     none     NH3_re      /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
+EMI_NH3_TR   'kg m-2 s-1'  N      Y      %y4-%m2-%d2T12:00:00    none     none     NH3_tr      /scratch1/NCEPDEV/rstprod/nexus_emissions/CEDS/2019/CEDS.2019.emis.%y4%m2%d2.nc
 EMI_NH3_OC   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     emiss_ocn   ExtData/PIESA/sfc/GEIA.emis_NH3.ocean.x576_y361.t12.20080715_12z.nc4
 
 NITRATE_HNO3 'mol mol-1'   Y      N      %y4-%m2-%d2T12:00:00    none     0.20     hno3        ExtData/PIESA/L64/GMI.vmr_HNO3.x144_y91.t12.2006.nc4

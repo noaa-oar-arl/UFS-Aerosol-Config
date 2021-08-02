@@ -34,6 +34,7 @@ PASSIVE_INSTANCES_CA:
 ACTIVE_INSTANCES_NI:  NI  # NI.data 
 PASSIVE_INSTANCES_NI:
 
-wavelengths_for_profile_aop_in_nm: 470 550 870
+wavelengths_for_profile_aop_in_nm: 470 550 670 870
 wavelengths_for_vertically_integrated_aop_in_nm: 470 550 670 870
-aerosol_monochromatic_optics_wavelength: 4.7e-7 5.5e-7 6.7e-7 8.7e-7
+# aerosol_monochromatic_optics_wavelength: 470.e-09 550.e-09 670.e-09 870.e-09
+aerosol_monochromatic_optics_wavelength: 470. 550. 670. 870.
