@@ -8,31 +8,35 @@ assignees: ''
 
 ---
 
-### Case Details
+## Case Details: 
 
-Give a more detailed description of the case. Such as resolution, time period, branch of UFS-Aerosol .rc files, and available measurements during the time period
+Please provide a brief description of the case or experiment 
 
 
-### Model Configuration Details 
+## Model Configuration Details 
 - Resolution: 
 - Begin Date: 
-- End Date: 
+- End Date:
 - Cold Start: True or False
+- Forecast length (FHMAX_GFS): 120 hours
+- FV3 output: every 6 hours 
 
+## Aerosol Model Configuration
 
-### Aerosol Model Configuration
-
-- ANTHRO1 (surface emissions) : 
-- ANTHRO2 (elevated emissions) : 
-- SHIP :  
-- Biomass Burning: 
-- Aviation: 
-- NH3 Emissions: 
-- Dust : 
-   * alpha:  
-   * gamma: 
+- ANTHRO1 (surface emissions) : CEDS
+- ANTHRO2 (elevated emissions) : CEDS
+- SHIP :  CEDS
+- Biomass Burning: QFED where GBBEPx isn't available 
+- Aviation: HTAP 
+- NH3 Emissions: CEDS
+- Dust : Fengsha
+   * alpha:  0.7
+   * gamma: 1
    * input file: 
-- Sea Salt:
-    * scaling factor: 
+- Sea Salt: 3 
+    * scaling factor: 1 
+- AOD output: 3 hours 
+- Column Mass output: 3 hours 
+- Surface Concentrtation output: every 3 hours 
 
-### Measurements/Models available for comparison
+## Measurements/Models available for comparison
