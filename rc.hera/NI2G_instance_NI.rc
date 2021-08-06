@@ -5,7 +5,6 @@
 nbins: 5
 
 aerosol_radBands_optics_file: ExtData/optics/opticsBands_NI.v2_5.RRTMG.nc
-
 aerosol_monochromatic_optics_file: ExtData/monochromatic/optics_NI.v2_5.nc
 
 # Scavenging efficiency per bin [km-1]

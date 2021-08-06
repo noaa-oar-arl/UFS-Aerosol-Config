@@ -5,7 +5,6 @@
 nbins:  2
 
 aerosol_radBands_optics_file: ExtData/optics/opticsBands_BC.v1_3.RRTMG.nc
-
 aerosol_monochromatic_optics_file: ExtData/monochromatic/optics_BC.v1_3.nc
 
 # Heights [m] of LTO, CDS and CRS aviation emissions layers
