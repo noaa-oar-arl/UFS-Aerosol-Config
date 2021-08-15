@@ -5,6 +5,9 @@
 aerosol_radBands_optics_file: ExtData/optics/opticsBands_SS.v3_3.RRTMG.nc
 
 aerosol_monochromatic_optics_file: ExtData/monochromatic/optics_SS.v3_3.nc
+aerosol_monochromatic_optics_wavelength: 4.7e-7 5.5e-7 6.7e-7 8.7e-7 ! units: nm
+wavelengths_for_vertically_integrated_aop_in_nm: 470 550 670 870
+n_channels: 4
 
 particle_radius_microns: 0.079 0.316 1.119 2.818 7.772
 
@@ -19,7 +22,7 @@ fscav: 0.4  0.4  0.4  0.4  0.4
 
 # Emissions methods and scaling
 emission_scheme: 3                                     # 1 for Gong 2003, 2 for ...
-emission_scale:  1.0 1.0 1.0 1.0 1.0 1.0   # a global scaling factor for C96
+emission_scale:  0.613 0.613 0.613 0.429 0.429 0.429   # a global scaling factor
 sstEmisFlag:     2                                     # Apply a correction to emissions based on SST (see code)
 hoppelFlag:      .false.              # Apply Hoppel correction (set non-zero, see Fan and Toon 2011)
 weibullFlag:     .false.              # Apply Weibull distribution (set non-zero, see Fan and Toon 2011)

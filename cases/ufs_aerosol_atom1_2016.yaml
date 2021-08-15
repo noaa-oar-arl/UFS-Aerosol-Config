@@ -9,7 +9,7 @@ case:
   settings: 
     SDATE: 2019-07-01t00:00:00
     EDATE: 2019-07-02t00:00:00
-    STEP_GFS: !timedelta "06:00:00"
+    STEP_GFS: !timedelta "24:00:00"
     STEP_DA: !timedelta "00:00:00"
     max_job_tries: 1
 
@@ -49,7 +49,7 @@ case:
        WRTIOBUF: "32M"
     CPL_ATMIC: FV3ICS
     CCPP_SUITE: FV3_GFS_v16
-    fscav_aero: [ '*:0.6', 'seas1:1.0', 'seas2:1.0', 'seas3:1.0', 'seas4:1.0', 'seas5:1.0' ]
+    fscav_aero: [ '*:0.2' ]
 
   chem_settings:
     MOD: gocart
