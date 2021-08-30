@@ -31,17 +31,17 @@ DU_UTHRES               '1'  Y E - none none uthres       /scratch1/NCEPDEV/rstp
 
 # QFED
 #--------------------------------------------------------------------------------------------------------------------------------
-SU_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_so2.006.%y4%m2%d2.nc4
-OC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_oc.006.%y4%m2%d2.nc4
-BC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_bc.006.%y4%m2%d2.nc4
-EMI_NH3_BB NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_nh3.006.%y4%m2%d2.nc4
+# SU_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_so2.006.%y4%m2%d2.nc4
+# OC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_oc.006.%y4%m2%d2.nc4
+# BC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_bc.006.%y4%m2%d2.nc4
+# EMI_NH3_BB NA  N Y %y4-%m2-%d2t12:00:00 none none biomass /scratch1/NCEPDEV/rstprod/nexus_emissions/QFED/%y4/%m2/qfed2.emis_nh3.006.%y4%m2%d2.nc4
 
 # GBBEPx 
 #--------------------------------------------------------------------------------------------------------------------------------
-# SU_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none SO2 /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc 
-# OC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none OC  /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc
-# BC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none BC  /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc
-# EMI_NH3_BB NA  N Y %y4-%m2-%d2t12:00:00 none none NH3 /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc
+SU_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none SO2 /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc 
+OC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none OC  /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc
+BC_BIOMASS NA  N Y %y4-%m2-%d2t12:00:00 none none BC  /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc
+EMI_NH3_BB NA  N Y %y4-%m2-%d2t12:00:00 none none NH3 /scratch1/NCEPDEV/rstprod/nexus_emissions/GBBEPx/GBBEPx_all01GRID.emissions_v003_%y4%m2%d2.nc
 
 #====== Sulfate Sources =================================================
 
@@ -61,16 +61,16 @@ SU_DMSO NA  Y Y %y4-%m2-%d2t12:00:00 none none conc /scratch1/NCEPDEV/nems/Raffa
 
 # Aviation emissions during the three phases of flight
 # --------------------------------------------------------------
-# If using 64 levels please replace this section with the correct values (ie replace 127 with 64)
+# If using 64 levels please replace this section with the correct values (ie replace 64 with 64)
 SU_AVIATION_LTO NA  Y Y %y4-%m2-%d2t12:00:00 none none so2_aviation /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.aviation_lto.x3600_y1800_t12.2010.nc4
 SU_AVIATION_CDS NA  Y Y %y4-%m2-%d2t12:00:00 none none so2_aviation /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.aviation_cds.x3600_y1800_t12.2010.nc4
 SU_AVIATION_CRS NA  Y Y %y4-%m2-%d2t12:00:00 none none so2_aviation /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.aviation_crs.x3600_y1800_t12.2010.nc4
 #---------------------------------------------------------------
 
 # H2O2, OH and NO3 mixing ratios
-SU_H2O2 NA  N Y %y4-%m2-%d2t12:00:00 none none h2o2 /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L127/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
-SU_OH   NA  N Y %y4-%m2-%d2t12:00:00 none none oh   /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L127/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
-SU_NO3  NA  N Y %y4-%m2-%d2t12:00:00 none none no3  /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L127/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
+SU_H2O2 NA  N Y %y4-%m2-%d2t12:00:00 none none h2o2 /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L64/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z64_t14.%y4.nc
+SU_OH   NA  N Y %y4-%m2-%d2t12:00:00 none none oh   /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L64/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z64_t14.%y4.nc
+SU_NO3  NA  N Y %y4-%m2-%d2t12:00:00 none none no3  /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L64/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z64_t14.%y4.nc
 
 # Production of SO2 from OCS oxidation
 pSO2_OCS NA Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
@@ -163,8 +163,8 @@ EMI_NH3_TR   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none  
 EMI_NH3_OC   'kg m-2 s-1'  Y      Y      %y4-%m2-%d2T12:00:00    none     none     emiss_ocn   /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/sfc/GEIA.emis_NH3.ocean.x576_y361.t12.20080715_12z.nc4
 
 # --------------------------------------------------------------
-# If using 64 levels please replace this section with the correct values (ie replace 127 with 64)
-NITRATE_HNO3 'mol mol-1'   Y      N      %y4-%m2-%d2T12:00:00    none     0.20     hno3        /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L127/GMI.vmr_HNO3.x144_y91.t12.2006.nc4
+# If using 64 levels please replace this section with the correct values (ie replace 64 with 64)
+NITRATE_HNO3 'mol mol-1'   Y      N      %y4-%m2-%d2T12:00:00    none     0.20     hno3        /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/L64/GMI.vmr_HNO3.x144_y91.t12.2006.nc4
 # --------------------------------------------------------------
 NI_regionMask NA           Y      V      -                       none     none     REGION_MASK /scratch1/NCEPDEV/nems/Raffaele.Montuoro/data/NASA/ExtData/PIESA/sfc/ARCTAS.region_mask.x540_y361.2008.nc
 
