@@ -35,3 +35,5 @@ sigma: 2.0  2.0
 
 pressure_lid_in_hPa: 0.01
 
+# plumerise
+plumerise: sofiev
