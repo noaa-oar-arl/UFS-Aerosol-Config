@@ -41,9 +41,9 @@ SU_AVIATION_CDS NA  Y Y %y4-%m2-%d2t12:00:00 none none so2_aviation ExtData/PIES
 SU_AVIATION_CRS NA  Y Y %y4-%m2-%d2t12:00:00 none none so2_aviation ExtData/PIESA/sfc/HTAP/v2.2/htap-v2.2.emis_so2.aviation_crs.x3600_y1800_t12.2010.nc4
 
 # H2O2, OH and NO3 mixing ratios
-SU_H2O2 NA  N Y %y4-%m2-%d2t12:00:00 none none h2o2 ExtData/PIESA/L64/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
-SU_OH   NA  N Y %y4-%m2-%d2t12:00:00 none none oh   ExtData/PIESA/L64/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
-SU_NO3  NA  N Y %y4-%m2-%d2t12:00:00 none none no3  ExtData/PIESA/L64/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
+SU_H2O2 NA  N Y %y4-%m2-%d2t12:00:00 none none h2o2 ExtData/PIESA/L127/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
+SU_OH   NA  N Y %y4-%m2-%d2t12:00:00 none none oh   ExtData/PIESA/L127/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
+SU_NO3  NA  N Y %y4-%m2-%d2t12:00:00 none none no3  ExtData/PIESA/L127/A2_ACCMIP_gmic_MERRA_oh_h2o2_no3.x144_y91_z127_t14.%y4.nc
 
 # Production of SO2 from OCS oxidation
 pSO2_OCS NA Y Y %y4-%m2-%d2t12:00:00 none none biofuel /dev/null
