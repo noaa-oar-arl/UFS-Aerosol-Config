@@ -11,7 +11,7 @@ python modules:
 - xarray
 - netcdf4 
 - numpy
-- fv3 grid (https://github.com/noaa-oar-arl/fv3grid)
+- fv3grid (https://github.com/noaa-oar-arl/fv3grid)
 
 ## How To Use
 
