@@ -7,12 +7,11 @@ The MERRA2 file needed can be found here: https://disc.gsfc.nasa.gov/datasets/M2
 ### Requirements
 
 python modules:
-- monet
 - xesmf
 - xarray
 - netcdf4 
 - numpy
-- pandas 
+- fv3 grid (https://github.com/noaa-oar-arl/fv3grid)
 
 ## How To Use
 
