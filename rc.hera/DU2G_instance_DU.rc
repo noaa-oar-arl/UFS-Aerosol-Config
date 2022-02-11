@@ -17,7 +17,7 @@ source_fraction: 1.0 1.0 1.0 1.0 1.0
 particle_density: 2500. 2650. 2650. 2650. 2650.
 
 # Resolution dependent tuning constant for emissions (a,b,c,d,e,f) (Ginoux, K14)
-Ch_DU: 0.2 0.2 0.07 0.07 0.07 0.056
+Ch_DU: 1.0 1.0 1.0 1.0 1.0 1.0 # 0.2 0.2 0.07 0.07 0.07 0.056
 
 # Scavenging efficiency per bin [km-1]
 fscav: 0.2  0.2  0.2  0.2  0.2   #
@@ -41,6 +41,6 @@ pressure_lid_in_hPa: 0.01
 emission_scheme: fengsha       # choose among: fengsha, ginoux, k14
 
 # FENGSHA settings
-alpha: 0.7
+alpha: 2.0
 gamma: 1.0
 vertical_to_horizontal_flux_ratio_limit: 2.e-04

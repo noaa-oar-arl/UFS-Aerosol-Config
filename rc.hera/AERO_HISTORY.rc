@@ -8,18 +8,19 @@ EXPDSC: GOCART2g_diagnostics_at_c360
 EXPSRC: GEOSgcm-v10.16.0
 
 
-COLLECTIONS: 'inst_du_ss'
-             'inst_ca'
-             'inst_ni'
-             'inst_su'
-#            'inst_du_bin'
-             'inst_ss_bin'
+COLLECTIONS: 'inst_aod'
+#	     'inst_du_ss'
+#             'inst_ca'
+#             'inst_ni'
+#             'inst_su'
+            'inst_du_bin'
+#             'inst_ss_bin'
 #            'inst_ca_bin'
 #            'inst_ni_bin'
 #            'inst_su_bin'
-             'inst_2d'
-             'inst_3d'
-             'inst_aod'
+#             'inst_2d'
+#             'inst_3d'
+#             'inst_aod'
 #            'tavg_du_ss'
 #            'tavg_du_bin'
 #            'tavg_2d_rad'
@@ -380,13 +381,14 @@ PC720x361-DC.LM: 72
   inst_aod.template:   '%y4%m2%d2_%h2%n2z.nc4' ,
   inst_aod.archive:    '%c/Y%y4' ,
   inst_aod.mode:       'instantaneous'
-  inst_aod.frequency:  010000,
+  inst_aod.frequency:  030000,
   inst_aod.duration:   010000,
   inst_aod.ref_time:   000000,
   inst_aod.grid_label: PC720x361-DC
   inst_aod.fields:     'CAEXTTAUCA.bc' , 'CA.bc'    , 'AOD_BC',
                        'CAEXTTAUCA.oc' , 'CA.oc'    , 'AOD_OC',
-                       'DUEXTTAU'      , 'DU'       , 'AOD_DU',
+		       'CAEXTTAUCA.br' , 'CA.br'    , 'AOD_BRC',
+		       'DUEXTTAU'      , 'DU'       , 'AOD_DU',
                        'NIEXTTAU'      , 'NI'       , 'AOD_NI',
                        'SSEXTTAU'      , 'SS'       , 'AOD_SS',
                        'SUEXTTAU'      , 'SU'       , 'AOD_SU',

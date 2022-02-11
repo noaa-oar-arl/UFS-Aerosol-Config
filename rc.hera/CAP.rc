@@ -60,6 +60,8 @@ CAP_EXPORTS:
    SO4,SU                  so4
    CAphobicCA.bc,CA.bc     bc1
    CAphilicCA.bc,CA.bc     bc2
+   CAphobicCA.br,CA.br     br1
+   CAphilicCA.br,CA.br     br2
    CAphobicCA.oc,CA.oc     oc1
    CAphilicCA.oc,CA.oc     oc2
    NH3,NI                  nh3

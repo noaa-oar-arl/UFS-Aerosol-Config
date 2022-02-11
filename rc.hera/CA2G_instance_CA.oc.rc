@@ -1,9 +1,12 @@
 #
-# Resource file for Organic Carbon parameters. 
+# Resource file for Organic Carbon parameters.
 #
 
 aerosol_radBands_optics_file: ExtData/optics/opticsBands_OC.v1_3.RRTMG.nc
 aerosol_monochromatic_optics_file: ExtData/monochromatic/optics_OC.v1_3.nc
+
+# Aircraft emission factor: convert input unit to kg C
+aircraft_fuel_emission_factor: 1.0000
 
 # Heights [m] of LTO, CDS and CRS aviation emissions layers
 aviation_vertical_layers: 0.0 100.0 9.0e3 10.0e3
@@ -24,7 +27,7 @@ rhFlag: 0
 hydrophobic_fraction: 0.5
 
 # Scavenging efficiency per bin [km-1] (NOT USED UNLESS RAS IS CALLED)
-fscav: 0.0  0.4 
+fscav: 0.0  0.4
 
 # Dry particle density [kg m-3]
 particle_density: 1800   1800
@@ -40,4 +43,6 @@ sigma: 2.20  2.20
 
 pressure_lid_in_hPa: 0.01
 
-nbins: 2 
+nbins: 2
+
+point_emissions_srcfilen: /dev/null
